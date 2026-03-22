@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		68D9462E2F6CCCF40070C6BC /* AlamofireDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 68D9462B2F6CCCF40070C6BC /* AlamofireDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		68D94A422F6F51560070C6BC /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 68D9462B2F6CCCF40070C6BC /* AlamofireDynamic */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		68F666972F6C4616006D6094 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -22,6 +27,20 @@
 			remoteInfo = Newsify;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		68D9462D2F6CCCF40070C6BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68D9462E2F6CCCF40070C6BC /* AlamofireDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		68F666892F6C4614006D6094 /* Newsify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D94A422F6F51560070C6BC /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68D946282F6CCCF40070C6BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68F666802F6C4614006D6094 = {
 			isa = PBXGroup;
 			children = (
 				68F6668B2F6C4614006D6094 /* Newsify */,
 				68F666992F6C4616006D6094 /* NewsifyTests */,
 				68F666A32F6C4616006D6094 /* NewsifyUITests */,
+				68D946282F6CCCF40070C6BC /* Frameworks */,
 				68F6668A2F6C4614006D6094 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +130,7 @@
 				68F666852F6C4614006D6094 /* Sources */,
 				68F666862F6C4614006D6094 /* Frameworks */,
 				68F666872F6C4614006D6094 /* Resources */,
+				68D9462D2F6CCCF40070C6BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,6 +141,7 @@
 			);
 			name = Newsify;
 			packageProductDependencies = (
+				68D9462B2F6CCCF40070C6BC /* AlamofireDynamic */,
 			);
 			productName = Newsify;
 			productReference = 68F666892F6C4614006D6094 /* Newsify.app */;
@@ -587,11 +617,19 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.11.1;
+				kind = exactVersion;
+				version = 5.11.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68D9462B2F6CCCF40070C6BC /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68D946022F6CC7EC0070C6BC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68F666812F6C4614006D6094 /* Project object */;
 }
