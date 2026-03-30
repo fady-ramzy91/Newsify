@@ -227,6 +227,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				68D946022F6CC7EC0070C6BC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				68C012F52F7B09380040C99E /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 68F6668A2F6C4614006D6094 /* Products */;
@@ -613,6 +614,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		68C012F52F7B09380040C99E /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
 		68D946022F6CC7EC0070C6BC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
